@@ -4,7 +4,7 @@ const soundEffect = document.getElementById("click-sound");
 const questions = [
   {
     question: "Qual modelo de Crocs combina mais com o seu estilo?",
-    image: "images/crocs-premio.jpg",
+    image: "images/img/crocs1.jpg",
     answers: [
       "🐊 Crocs Classic confortável e versátil",
       "🎨 Crocs colorido e estiloso pra se destacar",
@@ -14,7 +14,7 @@ const questions = [
   },
   {
     question: "O que você mais valoriza nos calçados da Crocs?",
-    image: "images/crocs-premio.jpg",
+    image: "images/img/crocs2.jpg",
     answers: [
       "🪶 Leveza e conforto o dia inteiro",
       "🌈 Cores vibrantes e diferentes",
@@ -24,7 +24,7 @@ const questions = [
   },
   {
     question: "Qual seria sua vibe perfeita usando Crocs?",
-    image: "images/crocs-premio.jpg",
+    image: "images/img/crocs3.jpg",
     answers: [
       "🌞 Passeio leve no dia a dia",
       "🎉 Look estiloso e descontraído",
@@ -34,7 +34,7 @@ const questions = [
   },
   {
     question: "Como você gosta de personalizar seu Crocs?",
-    image: "images/crocs-premio.jpg",
+    image: "images/img/crocs4.jpg",
     answers: [
       "🧩 Muitos Jibbitz divertidos",
       "⭐ Poucos detalhes mas bem escolhidos",
@@ -44,7 +44,7 @@ const questions = [
   },
   {
     question: "Qual motivo faz você amar Crocs?",
-    image: "images/crocs-premio.jpg",
+    image: "images/img/crocs5.jpg",
     answers: [
       "🛌 Conforto absurdo que não existe igual",
       "🔥 Estilo único e autêntico",
