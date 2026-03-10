@@ -4,7 +4,7 @@ const soundEffect = document.getElementById("click-sound");
 const questions = [
   {
     question: "Qual modelo de Crocs combina mais com o seu estilo?",
-    image: "images/img/crocs1.jpg",
+    image: "images/crocs-premio.jpg",
     answers: [
       "🐊 Crocs Classic confortável e versátil",
       "🎨 Crocs colorido e estiloso pra se destacar",
@@ -14,7 +14,7 @@ const questions = [
   },
   {
     question: "O que você mais valoriza nos calçados da Crocs?",
-    image: "images/img/crocs2.jpg",
+    image: "images/crocs-premio.jpg",
     answers: [
       "🪶 Leveza e conforto o dia inteiro",
       "🌈 Cores vibrantes e diferentes",
@@ -24,7 +24,7 @@ const questions = [
   },
   {
     question: "Qual seria sua vibe perfeita usando Crocs?",
-    image: "images/img/crocs3.jpg",
+    image: "images/crocs-premio.jpg",
     answers: [
       "🌞 Passeio leve no dia a dia",
       "🎉 Look estiloso e descontraído",
@@ -34,7 +34,7 @@ const questions = [
   },
   {
     question: "Como você gosta de personalizar seu Crocs?",
-    image: "images/img/crocs4.jpg",
+    image: "images/crocs-premio.jpg",
     answers: [
       "🧩 Muitos Jibbitz divertidos",
       "⭐ Poucos detalhes mas bem escolhidos",
@@ -44,7 +44,7 @@ const questions = [
   },
   {
     question: "Qual motivo faz você amar Crocs?",
-    image: "images/img/crocs5.jpg",
+    image: "images/crocs-premio.jpg",
     answers: [
       "🛌 Conforto absurdo que não existe igual",
       "🔥 Estilo único e autêntico",
@@ -68,7 +68,12 @@ function loadQuestion() {
         return;
     }
 
-    document.getElementById("question-image").src = questions[currentQuestionIndex].image;
+    const questionImage = document.getElementById("question-image");
+    questionImage.onerror = () => {
+      questionImage.onerror = null;
+      questionImage.src = "images/logo.png";
+    };
+    questionImage.src = questions[currentQuestionIndex].image;
     document.getElementById("question").innerText = questions[currentQuestionIndex].question;
 
     const answersContainer = document.getElementById("answers");
