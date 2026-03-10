@@ -135,7 +135,7 @@ function showFinalScreen() {
 }
 
 function resgatarPremio() {
-    window.location.href = "https://loja.levando.fun/";
+    window.location.href = "https://lojacroc.vercel.app";
 }
 
 window.onload = loadQuestion;
